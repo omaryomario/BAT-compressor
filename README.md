@@ -1,63 +1,49 @@
-# 🌐 [English 🇺🇸](#english) | [العربية 🇸🇦](#العربية)
+[![English](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
+[![Arabic](https://img.shields.io/badge/lang-ar-green.svg)](README.ar.md)
+
+# 🔐 Project Zipper with Password Protection
+
+This project provides a simple `compressor.bat` script to package a selected file (PDF, DOCX, etc.) into a secure ZIP format for submissions.
 
 ---
 
-## 📦 Project Submission Zipper
+## 🧭 How It Works
 
-This repository contains a standalone batch script that compresses your project report into a password-protected zip, wraps it in a submission folder, and then creates a final zip ready for upload.
+1. Run `compressor.bat`.
+2. Select any file when prompted (default: all file types).
+3. The script will:
+   - Generate a secure random password.
+   - Compress the selected file into a password-protected ZIP named:  
+     `Defending and Securing Systems Project.zip`
+   - Place that ZIP inside a non-password-protected ZIP named:  
+     `Final_Project_Submission.zip`
 
----
-
-## 🧭 English
-
-### 🔧 Features
-- 🔒 Compresses a selected **PDF or Word** document into a **password-protected ZIP** file.
-- 📁 Creates a folder: `Defending and Securing Systems Project`.
-- 📦 Moves the encrypted zip inside that folder.
-- 📁 Compresses the folder into a final **unprotected** zip.
-- 📝 Generates a file (`Submission_Details.txt`) with the password and final output path.
-
-### 🧰 Requirements
-- No installation required.
-- Just place `7za.exe` (CLI version of 7-Zip) in the same folder as the script.
-
-### ▶️ How to Use
-1. Download or clone this repository.
-2. Place your **PDF or Word report** and `7za.exe` in the same folder as `HelloWorld.bat`.
-3. Run `HelloWorld.bat`.
-4. A file picker will appear — select your report.
-5. The script will:
-   - Compress the report with a random password.
-   - Create the required folder structure.
-   - Show you the generated password and final output in Notepad.
+4. A file named `Submission_Password_Info.txt` will open in Notepad.  
+   This file contains the password – **paste it into the submission description.**
 
 ---
 
-## 🇸🇦 العربية
+## 📁 Example Output Structure
 
-### 🔧 الميزات
-- 🔒 ضغط تقرير المشروع بصيغة **PDF أو Word** في ملف ZIP محمي بكلمة مرور.
-- 📁 إنشاء مجلد باسم: `Defending and Securing Systems Project`.
-- 📦 نقل الملف المضغوط المحمي إلى داخل المجلد.
-- 📁 ضغط المجلد النهائي في ملف ZIP غير محمي.
-- 📝 إنشاء ملف (`Submission_Details.txt`) يحتوي على كلمة المرور ومسار الملف النهائي.
-
-### 🧰 المتطلبات
-- لا حاجة للتثبيت.
-- فقط ضع `7za.exe` (نسخة CLI من 7-Zip) في نفس المجلد مع السكربت.
-
-### ▶️ طريقة الاستخدام
-1. حمّل أو استنسخ هذا المستودع.
-2. ضع تقريرك بصيغة **PDF أو Word** وملف `7za.exe` في نفس مجلد `HelloWorld.bat`.
-3. شغّل `HelloWorld.bat`.
-4. ستظهر نافذة لاختيار الملف — اختر تقريرك.
-5. السكربت سيقوم بـ:
-   - ضغط التقرير بكلمة مرور عشوائية.
-   - إنشاء هيكل المجلد المطلوب.
-   - عرض كلمة المرور والنتيجة النهائية في المفكرة (Notepad).
+📁 YourFolder/
+├── compressor.bat
+├── 7za.exe
+├── Final_Project_Submission.zip
+├── Submission_Password_Info.txt
+└── Project_Folder/
+└── Defending and Securing Systems Project.zip
 
 ---
 
-> 💡 Note: The script uses only `7za.exe` placed locally. Internet is not required.  
-> 💬 Suggestions or issues? Open a GitHub issue in English or Arabic.
+## 📦 Requirements
 
+- Windows with PowerShell enabled
+- Internet access (only needed once to auto-download `7za.exe`)
+
+---
+
+## 📃 License
+
+MIT License — Free to use and modify.
+
+---
