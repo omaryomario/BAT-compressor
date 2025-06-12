@@ -6,6 +6,9 @@ This project provides a simple `compressor.bat` script to package a selected fil
 
 ---
 
+https://github.com/user-attachments/assets/28e04a97-25e2-4105-ac12-13b5840aa9a7
+
+
 ## 📦 How to Install
 
 1. Download or clone this repository:
