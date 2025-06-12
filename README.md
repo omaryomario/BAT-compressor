@@ -6,6 +6,28 @@ This project provides a simple `compressor.bat` script to package a selected fil
 
 ---
 
+## 📦 How to Install
+
+1. Download or clone this repository:
+   git clone https://github.com/your-username/your-repo-name.git
+
+2. Place your report file (e.g., .pdf, .docx) inside the same folder.
+
+3. Ensure `7za.exe` is present next to `compressor.bat`.
+   - If it isn't, the script will automatically download it.
+
+4. Run the script:
+   - Double-click `compressor.bat` or run it from the terminal:
+     compressor.bat
+
+5. Follow the prompts:
+   - A password will be generated.
+   - Select your file when prompted.
+   - A password-protected ZIP and a final submission ZIP will be created.
+
+6. Copy the password from `Submission_Password_Info.txt` and paste it into your assignment's submission description.
+
+
 ## 🧭 How It Works
 
 1. Run `compressor.bat`.
