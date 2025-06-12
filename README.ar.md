@@ -24,7 +24,7 @@
 ---
 
 ## 📁 مثال على البنية الناتجة
-
+```
 📁 مجلدك/
 ├── compressor.bat
 ├── 7za.exe
@@ -32,7 +32,7 @@
 ├── Submission_Password_Info.txt
 └── Project_Folder/
 └── Defending and Securing Systems Project.zip
-
+```
 ---
 
 ## 📦 المتطلبات
