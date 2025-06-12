@@ -1,4 +1,3 @@
-[![English](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
 [![Arabic](https://img.shields.io/badge/lang-ar-green.svg)](README.ar.md)
 
 # 🔐 Project Zipper with Password Protection
@@ -24,7 +23,7 @@ This project provides a simple `compressor.bat` script to package a selected fil
 ---
 
 ## 📁 Example Output Structure
-
+```
 📁 YourFolder/
 ├── compressor.bat
 ├── 7za.exe
@@ -32,7 +31,7 @@ This project provides a simple `compressor.bat` script to package a selected fil
 ├── Submission_Password_Info.txt
 └── Project_Folder/
 └── Defending and Securing Systems Project.zip
-
+```
 ---
 
 ## 📦 Requirements
